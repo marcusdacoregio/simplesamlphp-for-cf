@@ -37,3 +37,14 @@ RZ/nbTJ7VTeZOSyRoVn5XHhpuJ0B',
     'assertion.encryption' => TRUE,
     'nameid.encryption' => TRUE,
 );
+
+$metadata['http://localhost:8080/saml2/service-provider-metadata/simplesamlphp'] = array(
+    'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/simplesamlphp',
+    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/simplesamlphp',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+    'assertion.encryption' => FALSE,
+    'nameid.encryption' => FALSE,
+    'validate.authnrequest' => FALSE,
+    'redirect.sign' => TRUE,
+);

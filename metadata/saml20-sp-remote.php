@@ -4,10 +4,11 @@
  *
  * See: https://simplesamlphp.org/docs/stable/simplesamlphp-reference-sp-remote
  */
-$metadata['http://localhost:8080/saml2/service-provider-metadata/one'] = array(
-    'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/one',
-    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/one',
+$metadata['http://localhost/saml2/service-provider-metadata/one'] = array(
+    'AssertionConsumerService' => 'http://localhost/login/saml2/sso/one',
+    'SingleLogoutService' => 'http://localhost/saml2/logout/one',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'assertion.lifetime' => 1000000000,
     'simplesaml.nameidattribute' => 'emailAddress',
     'assertion.encryption' => FALSE,
     'nameid.encryption' => FALSE,
@@ -15,9 +16,9 @@ $metadata['http://localhost:8080/saml2/service-provider-metadata/one'] = array(
     'redirect.sign' => TRUE,
 );
 
-$metadata['http://localhost:8080/saml2/service-provider-metadata/two'] = array(
-    'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/two',
-    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/two',
+$metadata['http://localhost/saml2/service-provider-metadata/two'] = array(
+    'AssertionConsumerService' => 'http://localhost/login/saml2/sso/two',
+    'SingleLogoutService' => 'http://localhost/saml2/logout/two',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
     'simplesaml.nameidattribute' => 'eduPersonPrincipalName',
     'certData' => 'MIICgTCCAeoCCQCuVzyqFgMSyDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMC
@@ -34,6 +35,7 @@ y3Q6x+I4qakY/9qhBQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAAeViTvHOyQopWEi
 XOfI2Z9eukwrSknDwq/zscR0YxwwqDBMt/QdAODfSwAfnciiYLkmEjlozWRtOeN+
 qK7UFgP1bRl5qksrYX5S0z2iGJh0GvonLUt3e20Ssfl5tTEDDnAEUMLfBkyaxEHD
 RZ/nbTJ7VTeZOSyRoVn5XHhpuJ0B',
+    'assertion.lifetime' => 1000000000,
     'assertion.encryption' => TRUE,
     'nameid.encryption' => TRUE,
 );

@@ -52,8 +52,8 @@ $metadata['http://localhost:8080/saml2/service-provider-metadata/simplesamlphp']
 );
 
 $metadata['http://localhost:8080/saml2/service-provider-metadata/signedauthnrequest'] = array(
-    'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/simplesamlphp',
-    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/simplesamlphp',
+    'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/signedauthnrequest',
+    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/signedauthnrequest',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
     'certData' => 'MIICgTCCAeoCCQCuVzyqFgMSyDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMC

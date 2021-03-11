@@ -6,7 +6,7 @@
  */
 $metadata['http://localhost:8080/saml2/service-provider-metadata/one'] = array(
     'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/one',
-    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/one',
+    'SingleLogoutService' => 'http://localhost:8080/logout/saml2',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'assertion.lifetime' => 1000000000,
     'simplesaml.nameidattribute' => 'emailAddress',
@@ -18,7 +18,7 @@ $metadata['http://localhost:8080/saml2/service-provider-metadata/one'] = array(
 
 $metadata['http://localhost:8080/saml2/service-provider-metadata/two'] = array(
     'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/two',
-    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/two',
+    'SingleLogoutService' => 'http://localhost:8080/logout/saml2',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
     'simplesaml.nameidattribute' => 'eduPersonPrincipalName',
     'certData' => 'MIICgTCCAeoCCQCuVzyqFgMSyDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMC
@@ -42,7 +42,7 @@ RZ/nbTJ7VTeZOSyRoVn5XHhpuJ0B',
 
 $metadata['http://localhost:8080/saml2/service-provider-metadata/simplesamlphp'] = array(
     'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/simplesamlphp',
-    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/simplesamlphp',
+    'SingleLogoutService' => 'http://localhost:8080/logout/saml2',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
     'assertion.encryption' => FALSE,
@@ -53,7 +53,7 @@ $metadata['http://localhost:8080/saml2/service-provider-metadata/simplesamlphp']
 
 $metadata['http://localhost:8080/saml2/service-provider-metadata/signedauthnrequest'] = array(
     'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/signedauthnrequest',
-    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/signedauthnrequest',
+    'SingleLogoutService' => 'http://localhost:8080/logout/saml2',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
     'certData' => 'MIICgTCCAeoCCQCuVzyqFgMSyDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMC

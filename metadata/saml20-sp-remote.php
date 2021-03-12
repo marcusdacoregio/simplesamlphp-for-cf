@@ -16,6 +16,18 @@ $metadata['http://localhost:8080/saml2/service-provider-metadata/one'] = array(
     'redirect.sign' => TRUE,
 );
 
+$metadata['http://localhost:8081/saml2/service-provider-metadata/one'] = array(
+    'AssertionConsumerService' => 'http://localhost:8081/login/saml2/sso/one',
+    'SingleLogoutService' => 'http://localhost:8081/logout/saml2',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'assertion.lifetime' => 1000000000,
+    'simplesaml.nameidattribute' => 'emailAddress',
+    'assertion.encryption' => FALSE,
+    'nameid.encryption' => FALSE,
+    'validate.authnrequest' => FALSE,
+    'redirect.sign' => TRUE,
+);
+
 $metadata['http://localhost:8080/saml2/service-provider-metadata/two'] = array(
     'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/two',
     'SingleLogoutService' => 'http://localhost:8080/logout/saml2',

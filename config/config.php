@@ -807,7 +807,7 @@ $config = [
      * Example:
      *   'trusted.url.domains' => array('sp.example.com', 'app.example.com'),
      */
-    'trusted.url.domains' => ['localhost', '10.244.0.34.xip.io'],
+    'trusted.url.domains' => ['localhost', '10.244.0.34.xip.io', 'localhost:8080'],
 
     /*
      * Enable regular expression matching of trusted.url.domains.
@@ -818,6 +818,6 @@ $config = [
      * If enabled, the start and end delimiters ('^' and '$') will be added to
      * all regular expressions in trusted.url.domains.
      */
-    'trusted.url.regex' => false,
+    'trusted.url.regex' => true,
 
 ];

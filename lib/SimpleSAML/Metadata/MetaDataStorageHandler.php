@@ -119,7 +119,7 @@ class MetaDataStorageHandler implements ClearableState
                     return $baseurl.'saml2/idp/SingleLogoutService.php';
 
                 case 'SingleLogoutServiceBinding':
-                    return \SAML2\Constants::BINDING_HTTP_REDIRECT;
+                    return \SAML2\Constants::BINDING_HTTP_POST;
             }
         } elseif ($set == 'shib13-idp-hosted') {
             if ($property === 'SingleSignOnService') {

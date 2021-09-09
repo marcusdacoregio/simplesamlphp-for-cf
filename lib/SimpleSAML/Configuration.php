@@ -1105,7 +1105,7 @@ class Configuration implements Utils\ClearableState
             case 'saml20-idp-remote:SingleSignOnService':
             case 'saml20-idp-remote:SingleLogoutService':
             case 'saml20-sp-remote:SingleLogoutService':
-                return \SAML2\Constants::BINDING_HTTP_REDIRECT;
+                return \SAML2\Constants::BINDING_HTTP_POST;
             case 'saml20-sp-remote:AssertionConsumerService':
                 return \SAML2\Constants::BINDING_HTTP_POST;
             case 'saml20-idp-remote:ArtifactResolutionService':
